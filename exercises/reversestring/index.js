@@ -17,3 +17,24 @@ function reverse(str) {
 }
 
 module.exports = reverse;
+
+// Modified, 'for of' solution
+
+// function reverse(str) {
+//   var strReverse = '';
+
+//   for (let character of str) {
+//       strReverse = character + strReverse;
+//   }
+
+//   return strReverse;
+// }
+
+
+// Solution two
+
+// function reverse(str) {
+//   return str.split('')
+//             .reverse()
+//             .join('');
+// }
