@@ -7,31 +7,38 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 function reverse(str) {
-    var strReverse = "";  
-  
-    for (i = (str.length - 1); i >= 0; i-- ) {
+  var strReverse = "";  
+  for (i = (str.length - 1); i >= 0; i-- ) {
         strReverse = strReverse + str.charAt(i);
-    }
-
-    return strReverse;
+  }
+  return strReverse;
 }
 
 module.exports = reverse;
 
-// Modified, 'for of' solution
+// Using reduce(), which turns array into one string value //
+
+// function reverse(str) {
+//   str.split('').reduce((reversed, character) => {
+//     return character + reversed;
+//   }, ''); //empty string is starting value
+// }
+
+//
+// Modified, 'for of' solution //
+//
 
 // function reverse(str) {
 //   var strReverse = '';
-
 //   for (let character of str) {
-//       strReverse = character + strReverse;
+//     strReverse = character + strReverse;
 //   }
-
 //   return strReverse;
 // }
 
-
-// Solution two
+//
+// Most elegant solution, requires knowledge of reverse() //
+//
 
 // function reverse(str) {
 //   return str.split('')
