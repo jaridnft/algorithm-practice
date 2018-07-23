@@ -16,7 +16,7 @@ function reverse(str) {
 
 module.exports = reverse;
 
-// Using reduce(), which turns array into one string value //
+// ES6: Using reduce(), which turns array into one string value //
 
 // function reverse(str) {
 //   str.split('').reduce((reversed, character) => {
