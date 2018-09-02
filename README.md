@@ -23,7 +23,7 @@
 >**What are the requirements?**
 >
 >* Basic understanding of Javascript
-
+>
 >**What am I going to get from this course?**
 >
 >* Master commonly asked interview questions
